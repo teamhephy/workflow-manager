@@ -11,7 +11,7 @@ that adds a developer-friendly layer to any [Kubernetes][k8s-home] cluster,
 making it easy to deploy and manage applications on your own servers.
 
 For more information about Deis Workflow, please visit the main project page at
-https://github.com/deisthree/workflow.
+https://github.com/teamhephy/workflow.
 
 We welcome your input! If you have feedback on Workflow Manager,
 please [submit an issue][issues]. If you'd like to participate in development,
@@ -55,7 +55,7 @@ an outline.
 ## Docker Based Development Environment
 
 The preferred environment for development uses [the `go-dev` Docker
-image](https://github.com/deisthree/docker-go-dev). The tools described in this
+image](https://github.com/teamhephy/docker-go-dev). The tools described in this
 section are used to build, test, package and release each version of Deis.
 
 To use it yourself, you must have [make](https://www.gnu.org/software/make/)
@@ -86,7 +86,7 @@ core contributors also recognize that some code must be tested at a higher
 level (functional or integration tests, for example).
 
 
-[issues]: https://github.com/deisthree/workflow-manager/issues
-[prs]: https://github.com/deisthree/workflow-manager/pulls
+[issues]: https://github.com/teamhephy/workflow-manager/issues
+[prs]: https://github.com/teamhephy/workflow-manager/pulls
 [k8s-home]: https://kubernetes.io
-[v2.18]: https://github.com/deisthree/workflow/releases/tag/v2.18.0
+[v2.18]: https://github.com/teamhephy/workflow/releases/tag/v2.18.0
