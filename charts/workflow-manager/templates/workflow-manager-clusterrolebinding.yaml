@@ -1,0 +1,19 @@
+{{- if (.Values.global.use_rbac) -}}
+{{- if (.Capabilities.APIVersions.Has (include "rbacAPIVersion" .)) -}}
+kind: ClusterRoleBinding
+apiVersion: {{ template "rbacAPIVersion" . }}
+metadata:
+  name: deis:deis-workflow-manager
+  labels:
+    app: deis-workflow-manager
+    heritage: deis
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: deis:deis-workflow-manager
+subjects:
+- kind: ServiceAccount
+  name: deis-workflow-manager
+  namespace: {{ .Release.Namespace }}
+{{- end -}}
+{{- end -}}
