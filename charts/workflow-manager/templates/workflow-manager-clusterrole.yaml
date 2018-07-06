@@ -1,0 +1,21 @@
+{{- if (.Values.global.use_rbac) -}}
+{{- if (.Capabilities.APIVersions.Has (include "rbacAPIVersion" .)) -}}
+kind: ClusterRole
+apiVersion: {{ template "rbacAPIVersion" . }}
+metadata:
+  name: deis:deis-workflow-manager
+  labels:
+    app: deis-workflow-manager
+    heritage: deis
+rules:
+- apiGroups: ["extensions", "apps"]
+  resources: ["deployments", "daemonsets"]
+  verbs: ["get", "list"]
+- apiGroups: [""]
+  resources: ["namespaces", "replicationcontrollers"]
+  verbs: ["get", "list"]
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "list", "create", "delete", "update"]
+{{- end -}}
+{{- end -}}

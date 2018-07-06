@@ -113,7 +113,7 @@ func TestAddUpdateData(t *testing.T) {
 	err := AddUpdateData(&mockCluster, mocks.LatestMockData{})
 	assert.NoErr(t, err)
 	//TODO: when newestVersion is implemented, actually test for the addition of "UpdateAvailable" fields.
-	// tracked in https://github.com/deisthree/workflow-manager/issues/52
+	// tracked in https://github.com/teamhephy/workflow-manager/issues/52
 }
 
 func TestGetInstalled(t *testing.T) {
