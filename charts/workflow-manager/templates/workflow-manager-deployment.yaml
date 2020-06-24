@@ -24,7 +24,7 @@ spec:
       serviceAccount: deis-workflow-manager
       containers:
       - name: deis-workflow-manager
-        image: quay.io/{{.Values.org}}/workflow-manager:{{.Values.docker_tag}}
+        image: {{.Values.org}}/workflow-manager:{{.Values.docker_tag}}
         imagePullPolicy: {{.Values.pull_policy}}
 {{- if or (.Values.limits_cpu) (.Values.limits_memory)}}
         resources:
