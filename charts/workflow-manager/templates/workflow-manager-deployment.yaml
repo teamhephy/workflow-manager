@@ -21,6 +21,10 @@ spec:
       labels:
         app: deis-workflow-manager
     spec:
+{{- with .Values.global.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+{{- end }}
       serviceAccount: deis-workflow-manager
       containers:
       - name: deis-workflow-manager
