@@ -1,6 +1,6 @@
 org: "hephy"
-pull_policy: "Always"
-docker_tag: canary
+pull_policy: "IfNotPresent"
+docker_tag: v2.6.2
 versions_api_url: https://versions-staging.deis.com
 doctor_api_url: https://doctor-staging.deis.com
 # limits_cpu: "100m"
