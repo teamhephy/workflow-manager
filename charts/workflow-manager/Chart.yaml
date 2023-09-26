@@ -1,7 +1,8 @@
+apiVersion: v2
 name: workflow-manager
 home: https://github.com/teamhephy/workflow-manager
-version: 2.6.3
-description: "Deis Workflow Manager: Cluster First Aid"
+version: 2.6.4
+description: "Hephy Workflow Manager: Cluster First Aid"
 maintainers:
-  - name: Deis Team
-    email: engineering@deis.com
+- name: Team Hephy
+  email: team@teamhephy.com
