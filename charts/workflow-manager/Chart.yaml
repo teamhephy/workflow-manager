@@ -1,6 +1,6 @@
 name: workflow-manager
 home: https://github.com/teamhephy/workflow-manager
-version:  <Will be populated by the ci before publishing the chart>
+version: 2.6.3
 description: "Deis Workflow Manager: Cluster First Aid"
 maintainers:
   - name: Deis Team
